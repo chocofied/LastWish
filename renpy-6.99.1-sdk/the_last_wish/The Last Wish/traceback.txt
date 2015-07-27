@@ -1,0 +1,21 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 33, in script
+    n "No!{w=1} I can't accept this ending!{w=1} Please.{w=.5}.{w=.5}.{w=.5}{nw}"
+Exception: Sayer 'n' is not defined.
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 33, in script
+    n "No!{w=1} I can't accept this ending!{w=1} Please.{w=.5}.{w=.5}.{w=.5}{nw}"
+  File "/Users/admin/Documents/renpy-6.99.1-sdk/renpy/ast.py", line 573, in execute
+    who = eval_who(self.who, self.who_fast)
+  File "/Users/admin/Documents/renpy-6.99.1-sdk/renpy/ast.py", line 491, in eval_who
+    raise Exception("Sayer '%s' is not defined." % who.encode("utf-8"))
+Exception: Sayer 'n' is not defined.
+
+Darwin-14.1.0-x86_64-i386-64bit
+Ren'Py 6.99.1.329
+The Last Wish 0.0
