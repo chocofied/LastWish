@@ -81,6 +81,7 @@ label regain_consciousness:
     image village = "backgrounds/cobblestone_village.jpg"
     image beauty normal = "sprites/beauty_sprite1.png"
     image beauty shocked = "sprites/beauty_sprite2.png"
+    image old man = "sprites/oldman_sprite1.png"
     
     # TODO: replace this background with an original background
     scene black
@@ -101,8 +102,11 @@ label regain_consciousness:
     
     o "Hello, Miss!"
     
-    n "I turn at the sound of a croaky voice. 
-       An old man stands looking at me from behind a stall. 
+    n "I turn at the sound of a croaky voice."
+    
+    show old man at right
+    
+    n "An old man stands looking at me from behind a stall. 
        There are some gears, tools, and other odd bits laid out on the table, apparently for sale."
     
     show beauty normal at left
