@@ -1,5 +1,5 @@
-Tue Apr  7 20:50:41 2015
-Darwin-14.1.0-x86_64-i386-64bit
+Tue Jul 28 17:36:18 2015
+Darwin-14.4.0-x86_64-i386-64bit
 Ren'Py 6.99.1.329
 Ren'Py Tutorial 6.99 "Here's to the crazy ones."
 
@@ -8,7 +8,7 @@ Windowed mode.
 Screen sizes: virtual=(800, 600) physical=(1064, 798)
 Vendor: 'Intel Inc.'
 Renderer: 'Intel HD Graphics 4000 OpenGL Engine'
-Version: '2.1 INTEL-10.2.46'
+Version: '2.1 INTEL-10.6.31'
 Display Info: <Info({'blit_sw_CC': False, 'bitsize': 32, 'wm': True, 'losses': (0, 0, 0, 0), 'hw': False, 'masks': (16711680, 65280, 255, 4278190080), 'current_h': 900, 'current_w': 1440, 'shifts': (16, 8, 0, 24), 'blit_sw_A': False, 'blit_hw': False, 'blit_sw': False, 'bytesize': 4, 'blit_hw_CC': False, 'blit_hw_A': False, 'video_mem': 268435456})>
 Extensions:
     
@@ -155,8 +155,8 @@ Texture testing:
 Performance test:
 - Target is 5 frames in 0.333333333333 seconds.
 - Frame drawn at 0.000000 seconds.
-- Frame drawn at 0.020473 seconds.
-- Frame drawn at 0.032726 seconds.
-- Frame drawn at 0.049416 seconds.
-- Frame drawn at 0.065926 seconds.
-- 0.065926 seconds to render 5 frames.
+- Frame drawn at 0.019511 seconds.
+- Frame drawn at 0.031469 seconds.
+- Frame drawn at 0.049884 seconds.
+- Frame drawn at 0.064106 seconds.
+- 0.064106 seconds to render 5 frames.

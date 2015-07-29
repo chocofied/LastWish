@@ -79,6 +79,9 @@ label regain_consciousness:
                     what_slow_cps = 20,
                     show_two_window = True)
     image village = "backgrounds/cobblestone_village.jpg"
+    image beauty normal = "sprites/beauty_sprite1.png"
+    image beauty shocked = "sprites/beauty_sprite2.png"
+    
     # TODO: replace this background with an original background
     scene black
     with Dissolve(3)
@@ -95,11 +98,14 @@ label regain_consciousness:
        I slowly sit upright, wincing as the wooden crate I'm sitting on creaks under my weight."
     n "A yawn escapes my lips; how long have I been asleep?"
     
+    
     o "Hello, Miss!"
     
     n "I turn at the sound of a croaky voice. 
        An old man stands looking at me from behind a stall. 
        There are some gears, tools, and other odd bits laid out on the table, apparently for sale."
+    
+    show beauty normal at left
     
     a "Yes?"
     
