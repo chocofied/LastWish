@@ -68,15 +68,77 @@ label start:
     # the w's are manual pauses within the text.
     pause(1)
     n "I want to help them find their happily ever after. To do that, I need to.{w=.5}.{w=.5}."
-# each n advances to the next text box.
+# each new line advances to the next text box.
     
 # Alternatively, this could be called scene 1 or tutorial something else. Consider moving the code for this secene to a separate file later.
 label regain_consciousness:
+    define o = Character('Old Merchant',
+                    what_slow_cps = 20,
+                    show_two_window = True)
+    define lol = Character('Weird Cat Guy',
+                    what_slow_cps = 20,
+                    show_two_window = True)
+    image village = "backgrounds/cobblestone_village.jpg"
     # TODO: replace this background with an original background
     scene black
     with Dissolve(3)
     
     pause(1)
-    n "I blinked awake."
+    n "I wake up, as if from a dream."
+    
+    scene village
+    with Dissolve(2)
+    
+    a "What was that dream? Who was that voice? What were they talking about?"
+    
+    n "My neck hurts from having slept in an awkward position for too long.
+       I slowly sit upright, wincing as the wooden crate I'm sitting on creaks under my weight."
+    n "A yawn escapes my lips; how long have I been asleep?"
+    
+    o "Hello, Miss!"
+    
+    n "I turn at the sound of a croaky voice. 
+       An old man stands looking at me from behind a stall. 
+       There are some gears, tools, and other odd bits laid out on the table, apparently for sale."
+    
+    a "Yes?"
+    
+    o "You've been sleeping on that box for a while now. Aren't you uncomfortable?
+        What's a decent young girl like you doing, napping in a place like this?
+        You should hurry home before it gets dark."
+    
+    a "Oh..."
+    
+    n "That's when I notice that the sun has nearly set. 
+        A mellow orange has bathed the red cobblestone bricks of the road in a soft hue of harvest wheat. 
+        Yes, it's time I should be heading home. Mom is probably worried."
+    
+    a "Hm?"
+    n "That's odd. My mind is drawing a blank. 
+        I can't seem to remember what my house looks like, let alone how to get there, or even what my mom looks like."
+    n "Do I even have a 'home' to head back to?"
+    a "Sir, do you know how long I've been asleep?"
+    o "I'd say it hasn't been more than an hour or so. Seems like you were pretty tired, eh?"
+    a "I guess so."
+    n "Tired? 
+       Well, I suppose that's the only explanation for why I fell asleep sitting on this splintering little box in the middle of a street. 
+       With a grimace, I stand up, stretch my arms over my head, and begin walking down the street."
+    a "Goodbye, mister. I hope your sales go well."
+    o "Hope you have a nice evening, too. Heading back home?"
+    a "No. There's something I must do."
+    
+    n "The merchant blinks, but makes no further comment and turns his attention to a customer approaching his wares.
+       I continue to walk away without a backwards glance, my footsteps strangely sure, my eyes focused on an impending destination."
+    n "The streets are beginning to quiet down. Slowly, the last few people disappear down shaded alleyways and closing doors.
+       A distant knolling bell announces the evening lull."
+    n "Ding! ... Dong! ... Ding!"
+    # add bell sounds
+    
+    n "From the far left, a cheery voice halts you mid-step."
+    lol "Hey there, Ace of Spades."
+    
+    n "I glance over in the direction of the voice. A distinct sound of purring greets my ears."
+    
+    lol "So, Ace of Spades, Spade of all Aces, how are you feeling today?"
     
     return
