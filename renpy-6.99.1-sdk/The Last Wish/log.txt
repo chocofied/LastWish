@@ -1,4 +1,4 @@
-Tue Jul 28 18:08:16 2015
+Tue Aug  4 11:16:18 2015
 Darwin-14.4.0-x86_64-i386-64bit
 Ren'Py 6.99.1.329
 The Last Wish 0.0
@@ -155,8 +155,8 @@ Texture testing:
 Performance test:
 - Target is 5 frames in 0.333333333333 seconds.
 - Frame drawn at 0.000000 seconds.
-- Frame drawn at 0.017393 seconds.
-- Frame drawn at 0.033300 seconds.
-- Frame drawn at 0.049987 seconds.
-- Frame drawn at 0.065672 seconds.
-- 0.065672 seconds to render 5 frames.
+- Frame drawn at 0.018696 seconds.
+- Frame drawn at 0.034227 seconds.
+- Frame drawn at 0.050111 seconds.
+- Frame drawn at 0.068871 seconds.
+- 0.068871 seconds to render 5 frames.

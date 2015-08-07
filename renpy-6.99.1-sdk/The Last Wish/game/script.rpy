@@ -4,22 +4,18 @@
 # You can declare an image to be used later by typing "image", the type, then the name of the image, and set it equal to the address of the image in the directory.
 image black = "backgrounds/blackout.png"
 image white = "backgrounds/whiteout.png"
-# TODO: replace ice palace bg's with self-made ones
-image ice palace = "backgrounds/ice_palace.png"
-image ice hw 1 = "backgrounds/ice_hallway1.jpg"
-image ice hw 2 = "backgrounds/ice_hallway2.jpg"
-image mirror room = "backgrounds/mirror_room.jpeg"
+# TODO: replace all bg's with self-drawn ones
+
+# TODO: add random music for now
 
 # SPRITES
-# main character
-# none yet
+image beauty normal = "sprites/beauty_sprite1.png"
+image beauty shocked = "sprites/beauty_sprite2.png"
 
 # CHARACTER DECLARATIONS
 # the first argument is the name of the character, that will show up above their speech box.
 # the second is how fast the text types into the speech box.
-# I don't remember perfectly, but I think the last argument allows for the name to be in the separate box above the speech box. 
-
-# TODO: make the character names different colors?
+# the last argument allows for the name to be in the separate box above the speech box. 
 
 # anonymous character (unknown name)
 define a = Character('?????',
@@ -33,7 +29,7 @@ define p = Character('Beauty',
 define n = Character(None,
                     what_slow_cps = 10)
 
-# The game starts here. Is it possible to have this play before the title screen?
+# The game starts here. TODO: Is it possible to have this play before the title screen?
 label start:
 
 # scene (name of image) will put that image on the background
@@ -79,13 +75,13 @@ label regain_consciousness:
                     what_slow_cps = 20,
                     show_two_window = True)
     image village = "backgrounds/cobblestone_village.jpg"
-    image beauty normal = "sprites/beauty_sprite1.png"
-    image beauty shocked = "sprites/beauty_sprite2.png"
     image old man = "sprites/oldman_sprite1.png"
     
     # TODO: replace this background with an original background
     scene black
     with Dissolve(3)
+
+    # TODO: change some of beauty's expressions
     
     pause(1)
     n "I wake up, as if from a dream."
@@ -139,10 +135,11 @@ label regain_consciousness:
     
     n "The merchant blinks, but makes no further comment and turns his attention to a customer approaching his wares.
        I continue to walk away without a backwards glance, my footsteps strangely sure, my eyes focused on an impending destination."
+    hide old man
     n "The streets are beginning to quiet down. Slowly, the last few people disappear down shaded alleyways and closing doors.
        A distant knolling bell announces the evening lull."
     n "Ding! ... Dong! ... Ding!"
-    # add bell sounds
+    # TODO: add bell sounds
     
     n "From the far left, a cheery voice halts you mid-step."
     lol "Hey there, Ace of Spades."

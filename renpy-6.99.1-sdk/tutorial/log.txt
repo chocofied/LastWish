@@ -1,4 +1,4 @@
-Tue Jul 28 17:36:18 2015
+Wed Jul 29 10:18:40 2015
 Darwin-14.4.0-x86_64-i386-64bit
 Ren'Py 6.99.1.329
 Ren'Py Tutorial 6.99 "Here's to the crazy ones."
@@ -155,8 +155,8 @@ Texture testing:
 Performance test:
 - Target is 5 frames in 0.333333333333 seconds.
 - Frame drawn at 0.000000 seconds.
-- Frame drawn at 0.019511 seconds.
-- Frame drawn at 0.031469 seconds.
-- Frame drawn at 0.049884 seconds.
-- Frame drawn at 0.064106 seconds.
-- 0.064106 seconds to render 5 frames.
+- Frame drawn at 0.024492 seconds.
+- Frame drawn at 0.033744 seconds.
+- Frame drawn at 0.049340 seconds.
+- Frame drawn at 0.066122 seconds.
+- 0.066122 seconds to render 5 frames.
